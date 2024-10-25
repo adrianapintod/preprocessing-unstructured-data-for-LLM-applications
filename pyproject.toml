@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "preprocessing-unstructured-data-for-llm-applications"
+version = "0.1.0"
+description = ""
+authors = ["Adriana Pinto <luzadriana.pin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+unstructured-client = "^0.23.7"
+unstructured = {extras = ["md", "pdf", "pptx"], version = "^0.14.7"}
+python-dotenv = "^1.0.1"
+panel = "^1.4.4"
+openai = "^1.35.7"
+langchain-openai = "^0.1.13"
+langchain = "^0.2.6"
+langchain-community = "^0.2.11"
+chromadb = "^0.5.5"
+langchain-chroma = "^0.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.2.3"
+ruff = "^0.4.10"
+jupyterlab = "^4.2.2"
+mypy = "^1.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
